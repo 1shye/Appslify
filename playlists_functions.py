@@ -44,6 +44,7 @@ def parse_playlists_dates(playlists_data_json):
     return parsed_dates
 
 
+
 def parse_string_to_date(date):
     """
     Desc: the function parses date in string form and turns it into a datetime object
@@ -67,6 +68,7 @@ def get_daily_playlist():
     for date in playlists_dates:
         if now == date:
             return playlists_data[date]
+
 
     logging.info("there is no playlist today")
     latest_playlist = get_latest_date_string(playlists_data)
@@ -109,4 +111,5 @@ def get_latest_date_string(playlists_data):
     latest_date = max(latest_dates)
 
     return latest_date.strftime(config.DATE_FORMAT)
+
 

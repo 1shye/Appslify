@@ -2,6 +2,8 @@ from playlists_functions import *
 import time
 
 # the function returns the daily shuffled songs playlists by printing the song on the daily playlist
+
+
 def play_daily_playlist():
     play_playlist = get_daily_playlist()
     for current_song in shuffle(play_playlist):
