@@ -1,5 +1,4 @@
 *.log
-/test
 /.idea
 /__pycache__
 AppslifyLogs.log
